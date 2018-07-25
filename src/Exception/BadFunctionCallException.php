@@ -4,7 +4,7 @@
  *
  * @category Ophp-Http
  * @package Exception
- * @license MIT <https://github.com/ojullien/ophp-Db/blob/master/LICENSE>
+ * @license MIT <https://github.com/ojullien/Ophp-Http/blob/master/LICENSE>
  */
 namespace Ophp\Http\Exception;
 

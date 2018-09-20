@@ -29,7 +29,7 @@
     <php>
     </php>
     <testsuites>
-        <testsuite name="Ophp-Http Tests Suite">
+        <testsuite name="Oseille-Http Tests Suite">
             <directory suffix="Test.php">./tests/src</directory>
         </testsuite>
     </testsuites>

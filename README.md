@@ -1,4 +1,4 @@
-# Http
+# Oseille-Http
 
 Tools for handling PHP $_SERVER data.
 

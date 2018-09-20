@@ -1,12 +1,11 @@
 <?php
-
 /**
- * This file is a part of the Ophp framework
+ * This file is a part of the Oseille framework
  *
- * @package Http
- * @license MIT <https://github.com/ojullien/Ophp-Http/blob/master/LICENSE>
+ * @package Oseille\Http
+ * @license MIT <https://github.com/Oseille/Http/blob/master/LICENSE>
  */
-namespace Ophp\Http;
+namespace Oseille\Http;
 
 /**
  * Utility class for handling $_SERVER data.
@@ -36,7 +35,7 @@ abstract class HttpUtils
             preg_match('/MSIE\s(\d*)/i', $sUserAgent, $aVersion);
 
             // Looks for Trident
-            if (!isset($aVersion[1])) {
+            if (! isset($aVersion[1])) {
                 preg_match('/Trident\/(\d*)/i', $sUserAgent, $aVersion);
             }
         }
@@ -125,14 +124,13 @@ abstract class HttpUtils
         $aAllowedLocales = array_filter(array_values($allowed), 'is_string');
 
         // Find out the locale from the http header
-        $sLocale = \Ophp\Http\HttpUtils::getLocaleFromHttp($header);
+        $sLocale = \Oseille\Http\HttpUtils::getLocaleFromHttp($header);
 
         // Checkes allowed or default if any
         if (isset($aAllowedLocales[0])) {
-            $sLocale = \Ophp\Http\HttpUtils::getBestAllowedLocale($sLocale, $aAllowedLocales);
+            $sLocale = \Oseille\Http\HttpUtils::getBestAllowedLocale($sLocale, $aAllowedLocales);
         }
 
         return strtr($sLocale, '-', '_');
     }
-
 }

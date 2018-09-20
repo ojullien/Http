@@ -1,12 +1,11 @@
 <?php
 /**
- * This file is a part of the Ophp framework
+ * This file is a part of the Oseille framework
  *
- * @category Ophp-Http
- * @package   Exception
- * @license MIT <https://github.com/ojullien/Ophp-Http/blob/master/LICENSE>
+ * @package Oseille\Http
+ * @license MIT <https://github.com/Oseille/Http/blob/master/LICENSE>
  */
-namespace Ophp\Http\Exception;
+namespace Oseille\Http\Exception;
 
 /**
  * Exception thrown if a value does not adhere to a defined valid data domain.
